@@ -1,0 +1,10 @@
+/* GENERIC */
+@import "generic/generic.css";
+
+/* ELEMENTS */
+@import "elements/elements.css";
+
+@font-face {
+  font-family: "Dancing";
+  src: url("../fonts/DancingScript-Bold.ttf");
+}
