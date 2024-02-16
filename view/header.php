@@ -15,7 +15,7 @@
         </header>
         <nav>
             <ul>
-                <li><a href="{{ path }}home">Accueil</a></li>
+                <li><a href="{{path}}home">Accueil</a></li>
                 <li><a href="{{path}}produit">Liste des produits</a></li>
             </ul>
         </nav>

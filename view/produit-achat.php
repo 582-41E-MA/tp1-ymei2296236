@@ -28,7 +28,7 @@
                 </label> 
                 <br>             
                 {% if produit.quantite != 0 %}
-                    <a href="#">Acheter</a>
+                    <a href="https://buy.stripe.com/test_eVabIWfeGaW26By289">Acheter</a>
                 {% else %}
                     <span>Produit indisponible</span>
                 {% endif %} 
@@ -37,3 +37,4 @@
     </div>
 </main>
 {{ include('footer.php') }}
+
