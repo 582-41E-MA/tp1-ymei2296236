@@ -115,9 +115,9 @@ class ControllerProduit extends Controller {
         $selectId['quantite'] = $selectId['quantite'] - 1; 
         
         $produitUpdated = new Produit;
-        $achat = $produitUpdated->updateQuantite($id, $selectId['quantite']);
-        echo "<pre>";
-        var_dump($achat);
+        $achat = $produitUpdated->update($selectId);
+        // echo "<pre>";
+        // var_dump($achat);
 
         //TODO: retourne la page de confirmation
         return Twig::render('produit-index.php', ['produit'=>$achat]);

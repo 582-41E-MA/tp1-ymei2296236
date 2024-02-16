@@ -4,13 +4,8 @@ class Produit extends CRUD {
 
     protected $table = 'produit';
     protected $primaryKey = 'id_produit';
-
+    protected $fillable = ['id_produit', 'type', 'description', 'prix', 'id_material', 'image', 'quantite'];
         
-    public function updateQuantite($id, $quantite) {
-        $sql = "UPDATE $this->table SET quantite = $quantite WHERE id_produit = $id";
-        $stmt = $this->query($sql);
-        return $stmt->fetchAll();
-    }
 }
 
 ?>

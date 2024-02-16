@@ -57,6 +57,9 @@ abstract class CRUD extends PDO {
     }
 
     public function update($data) {
+        $data_keys = array_fill_keys($this->fillable, '');
+        $data = array_intersect_key($data, $data_keys);
+
         $champRequete = null;
         foreach ($data as $cle => $valeur) {
             $champRequete .= "$cle =:$cle, ";
