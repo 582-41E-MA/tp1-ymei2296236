@@ -106,6 +106,22 @@ class ControllerProduit extends Controller {
         return Twig::render('produit-achat.php', ['produit'=>$selectId, 'materials'=>$selectMaterial]);
 
     }
+
+    
+    public function achat($id)
+    {
+        $produit = new Produit;
+        $selectId = $produit->selectId($id);
+        $selectId['quantite'] = $selectId['quantite'] - 1; 
+        
+        $produitUpdated = new Produit;
+        $achat = $produitUpdated->updateQuantite($id, $selectId['quantite']);
+        echo "<pre>";
+        var_dump($achat);
+
+        //TODO: retourne la page de confirmation
+        return Twig::render('produit-index.php', ['produit'=>$achat]);
+    }
 }
 
 ?>
