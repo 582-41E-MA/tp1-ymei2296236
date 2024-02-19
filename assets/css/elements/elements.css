@@ -146,6 +146,10 @@ select {
   width: 50rem;
 }
 
+.confirmation {
+  text-align: center;
+}
+
 .error {
   color: red;
 
