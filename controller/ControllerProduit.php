@@ -120,7 +120,7 @@ class ControllerProduit extends Controller {
         // var_dump($achat);
 
         //TODO: retourne la page de confirmation
-        return Twig::render('confirmation.php');
+        return Twig::render('confirmation.php', ['produit'=>$selectId]);
     }
 }
 

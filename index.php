@@ -2,10 +2,9 @@
 
 session_start();
 
-define('PATH_DIR', 'http://localhost:8000/tp1-ymei2296236/'); // Windows
+// define('PATH_DIR', 'http://localhost:8000/tp1-ymei2296236/'); // Windows
 // define('PATH_DIR', 'http://localhost:8888/tp1-ymei2296236/'); // Mac
-
-// define('PATH_DIR', 'https://e2296236.webdev.cmaisonneuve.qc.ca/tp1-ymei2296236/'); // Webdev
+define('PATH_DIR', 'https://e2296236.webdev.cmaisonneuve.qc.ca/tp1-ymei2296236/'); // Webdev
 require_once('controller/Controller.php');
 require_once('library/RequirePage.php');
 require_once __DIR__.'/vendor/autoload.php';

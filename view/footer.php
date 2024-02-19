@@ -1,6 +1,5 @@
         <footer>
             <div>
-                @2023 - Fernanda Mamud
             </div>
             <div>
                 <img src="{{path}}assets/img/instagram.svg" alt="icone_instagram">
